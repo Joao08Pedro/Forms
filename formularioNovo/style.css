@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 5rem;
+    background-color: #d7e3f1;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2.3rem;
+}
+
+form {
+    width: 40rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.377);
+    display: inline-block;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: ;
+    color: #555;
+    display: block;     /* display padrão, ele ocupa todo espaço disponivel que ele tem */
+    margin: 0.5rem 0;   /* 0.5 pra cima e pra baixo, 0 para esquerda e direita */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    letter-spacing: 0.12rem;   /* letter-spacing = Espaçamento entre as letras; é tipo um gap para letras */
+    border: solid 0.1rem #ccc;
+    border-radius: 0.5rem;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline: none;  /* tira a linha que aparece quando o campo está focado */
+    border-color: rgb(58, 144, 194);
+    box-shadow: 0rem 0rem 0.5rem rgb(118, 184, 245);
+}
+
+textarea {
+    resize: none;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;    
+}
+
+.radio input {
+    width: auto;
+}
+
+button {
+    background-color: rgb(77, 130, 199);
+    border: none;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background-color: rgb(40, 89, 153);
+}

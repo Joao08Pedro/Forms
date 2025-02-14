@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 5rem;
+    background-color: #111111; /* Preto suave para dar mais foco aos elementos */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: #fff; /* Branco brilhante para o título */
+    font-size: 2.3rem;
+    text-transform: uppercase; /* Dá um ar mais estiloso ao texto */
+}
+
+form {
+    width: 40rem;
+    background-color: #222222; /* Fundo mais dark, mas ainda contrastando bem com o branco */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.6rem 1.2rem rgba(0, 0, 0, 0.5); /* Sombra mais forte para destaque */
+    display: inline-block;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+label {
+    font-weight: bold;
+    color: #f02d2d; /* Cor vibrante para o label (rosa neon) */
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.5rem; /* Tamanho maior para um toque mais chamativo */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    letter-spacing: 0.1rem;
+    border: solid 0.1rem #ff0000; /* Borda rosa neon para destaque */
+    border-radius: 0.5rem;
+    background-color: #333333; /* Cor mais escura no fundo dos campos */
+    color: #fff; /* Cor do texto nos campos é branco para destacar */
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #00c2ff; /* Azul elétrico no foco */
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 194, 255, 0.6); /* Efeito de brilho no foco */
+}
+
+textarea {
+    resize: none;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.radio input {
+    width: auto;
+}
+
+button {
+    background-color: #972727; /* Roxo vibrante para o botão */
+    border: none;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+}
+
+button:hover {
+    background-color: #a51b1b; /* Roxo mais escuro no hover */
+    transform: scale(1.05); /* Efeito de ampliação no hover */
+    box-shadow: 0 0 10px rgba(187, 46, 46, 0.7); /* Sombra roxa brilhante */
+}
+
+button:active {
+    transform: scale(1); /* Volta ao tamanho normal quando pressionado */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Bonitão</title>
+</head>
+
+<body>
+    <h2> Formulário de Cadastro</h2>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+
+        <label for="nasc">Data de nascimento:</label>
+        <input type="date" name="nasc" id="nasc" required>
+
+        <label for="Gênero">Gênero:</label>
+        <div class="radio">
+            <label for="radio"></label>
+                <input type="radio" name="genero" value="masculino">Masculino</label>
+                <input type="radio" name="genero" value="feminino">Feminino</label>
+                <input type="radio" name="genero" value="outro">Outro</label>
+        </div>
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value="" selected disabled>Escolha</option>
+            <option value="">RS</option>
+            <option value="">SP</option>
+            <option value="">RJ</option>
+            <option value="">MG</option>
+        </select>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="arquivo">Foto de perfil:</label>
+        <input type="file" name="arquivo" id="arquivo">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
+
+<!--selected disabled, faz com que não possa selecionar-->
